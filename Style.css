@@ -10,18 +10,22 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #33ccff, #ff99cc);
 }
 
 .login-signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    height: 400px;
 }
 
 .login, .signup {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 20px;
-    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 1s, transform 1s;
+    background: linear-gradient(to bottom, #ccff99, #ffff99);
 }
 
 .login {
@@ -48,12 +52,25 @@ body {
     background-color: #4CAF50;
     color: #fff;
     cursor: pointer;
+    background: linear-gradient(to bottom, #0099cc, #66cc00);
 }
 
 .toggle-button button:hover {
-    background-color: #3e8e41;
+    background: linear-gradient(to bottom, #0099cc, #ffcc00);
 }
 
 .toggle-button button.active {
-    background-color: #66CC00;
+    background: linear-gradient(to bottom, #66cc00, #0099cc);
+}
+
+.login h2, .signup h2 {
+    color: #0099cc;
+}
+
+.login button, .signup button {
+    background: linear-gradient(to bottom, #0099cc, #66cc00);
+}
+
+.login button:hover, .signup button:hover {
+    background: linear-gradient(to bottom, #0099cc, #ffcc00);
 }
